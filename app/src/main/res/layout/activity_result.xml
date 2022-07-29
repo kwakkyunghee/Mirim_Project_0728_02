@@ -10,7 +10,27 @@
     tools:context=".ResultActivity">
 
     <TableRow
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_span="2"
+            android:text="최다 득표한 사진 이름 : "/>
+    </TableRow>
+    <TableRow
         android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_span="2"
+            android:src="@drawable/s"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text01"
             android:layout_width="match_parent"
@@ -22,11 +42,11 @@
             android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text02"
             android:layout_width="match_parent"
@@ -38,11 +58,11 @@
             android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text03"
             android:layout_width="match_parent"
@@ -54,11 +74,11 @@
             android:id="@+id/rb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text04"
             android:layout_width="match_parent"
@@ -70,11 +90,11 @@
             android:id="@+id/rb4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text05"
             android:layout_width="match_parent"
@@ -86,11 +106,11 @@
             android:id="@+id/rb5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text06"
             android:layout_width="match_parent"
@@ -102,11 +122,11 @@
             android:id="@+id/rb6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text07"
             android:layout_width="match_parent"
@@ -118,11 +138,11 @@
             android:id="@+id/rb7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text08"
             android:layout_width="match_parent"
@@ -134,11 +154,11 @@
             android:id="@+id/rb8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <TextView
             android:id="@+id/text09"
             android:layout_width="match_parent"
@@ -150,12 +170,12 @@
             android:id="@+id/rb9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_gravity="right"/>
     </TableRow>
 
     <TableRow
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="5dp">
         <Button
             android:id="@+id/btn_home"
             android:layout_span="2"

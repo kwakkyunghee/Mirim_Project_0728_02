@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -15,9 +17,30 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        TextView tvTitle = findViewById(R.id.text_title);
+        ImageView imgv = findViewById(R.id.imgv);
         Intent intent = getIntent();
         String[] imgName = intent.getStringArrayExtra("imgName");
         int[] voteCount = intent.getIntArrayExtra("voteCount");
+        int[] imgRes = {R.drawable.s,R.drawable.wjdgks,R.drawable.whtbdk,R.drawable.wns,R.drawable.ghtl,R.drawable.dnjsdn,R.drawable.dnwl,R.drawable.eldpdlt,R.drawable.alsrb };
+
+        int max = voteCount[0];
+        int maxIndex = 0;
+
+        for(int i=0; i<voteCount.length; i++){
+            if(voteCount[i] > max){
+                max = voteCount[i];
+                maxIndex = i;
+            }
+        }
+
+        tvTitle.setText(imgName[maxIndex]);
+        imgv.setImageResource(imgRes[maxIndex]);
+
+
+        tvTitle.setText(imgName[maxIndex]);
+        imgv.setImageResource(imgRes[maxIndex]);
+
         TextView[] tv = new TextView[imgName.length];
         int[] textId = {R.id.text01,R.id.text02,R.id.text03,R.id.text04,R.id.text05,R.id.text06,R.id.text07,R.id.text08,R.id.text09};
         RatingBar[] rb = new RatingBar[voteCount.length];
@@ -27,6 +50,7 @@ public class ResultActivity extends AppCompatActivity {
             rb[i] = findViewById(rbId[i]);
             tv[i].setText(imgName[i]);
             rb[i].setRating(voteCount[i]);
+
         }
         Button btnHome = findViewById(R.id.btn_home);
         btnHome.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +59,9 @@ public class ResultActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
 
     }
 }
